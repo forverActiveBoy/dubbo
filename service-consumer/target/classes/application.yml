@@ -1,0 +1,16 @@
+#指定应用名
+dubbo:
+  application:
+    name: service-consumer
+#指明注册中心的位置
+  registry:
+    address: zookeeper://127.0.0.1:2181
+#远程服务调用的协议
+  protocol:
+    name: dubbo
+    port: 20882
+#连接监控中心
+  monitor:
+    protocol: registry
+server:
+  port: 8082
